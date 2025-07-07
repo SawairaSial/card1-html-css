@@ -1,0 +1,112 @@
+*{
+  padding: 0;
+  margin: 0;
+ box-sizing: border-box;
+}
+html,body{
+  font-size: 18px;
+  color: #2d2d2d;
+  background-color:  #f5f7fa;
+  text-align: center;
+  text-transform: capitalize;
+}
+li,ul{
+  list-style: none;
+}
+a{
+  text-decoration: none;
+  transition: all 2s ease-in-out;
+  color: blue;
+}
+a:hover{
+  color: plum;
+}
+@keyframes colour{
+  0%{
+    color: #c0992e;
+  }
+  50%{
+    color: #89b542;
+  }
+  100%{
+    color: #b243b9;
+  }
+}
+.wrapper{
+  max-width: 1024px;
+  width: 100%;
+  margin: auto;
+}
+/*
+Background color: #f8f9fd (light grayish blue)
+
+Text color: #2d2d2d (dark gray)
+
+Card box shadow: 0 4px 12px rgba(0, 0, 0, 0.08)
+
+Border-radius: 12px
+
+Font-family: 'Poppins', sans-serif */
+header{
+  background-color:#ffffff ;
+  padding: 10px;
+  height: 50px;
+}
+footer{
+  background-color:#ffffff ;
+  padding: 10px;
+  height: 50px;
+ 
+}
+.cardbox{
+  max-width: 1000px;
+  min-height: auto;
+  margin: auto;
+  padding: 10px 15px;
+  display: grid;
+  gap: 15px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+}
+.card{
+  
+  background-color:  #ffffff;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08) ;
+   transition: all .6s ease-in-out;
+}
+.card img{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+.card button{
+border: 0px ;
+  padding: 8px 15px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-size: 18px;
+  transition: all .6s ease-in-out;
+  background-color: white;
+  box-shadow: 2px 10px 9px rgb(213, 205, 205);
+}
+.card h4,p{
+  padding: 2px;
+}
+.card button:hover{
+  background-color: rgb(15, 60, 164);
+  color: white;
+  opacity: .8;
+  transform: scale(1.1);
+}
+.card:hover{
+  background-color: whitesmoke;
+  
+  transform: translateY(-4px);
+}
